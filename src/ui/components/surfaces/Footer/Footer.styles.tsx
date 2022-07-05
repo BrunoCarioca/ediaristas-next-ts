@@ -61,7 +61,7 @@ export const FooterSocialList = styled(List)`
 
 export const SocialButton = styled((props: LinkProps) => (
   <Link
-    component={IconButton}
+    Component={IconButton}
     target={'_blank'}
     rel={'noopener noreferrer'}
     {...props}

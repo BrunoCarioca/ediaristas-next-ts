@@ -1,4 +1,8 @@
-import { Link as MuiLink, LinkProps as MuiLinkProps, ButtonProps } from '@mui/material';
+import {
+  ButtonProps,
+  Link as MuiLink,
+  LinkProps as MuiLinkProps,
+} from '@mui/material';
 import NextLink, { LinkProps as NextLinkProps } from 'next/link';
 import Router from 'next/router';
 import React from 'react';
@@ -22,13 +26,11 @@ const Link: React.FC<LinkProps> = ({
   const isNextEnv = Boolean(Router.router);
 
   return isNextEnv ? (
-    <div>
-      <NextLink href={href} passHref {...next}>
-        <Component {...mui} {...props}>
-          {children}
-        </Component>
-      </NextLink>
-    </div>
+    <NextLink href={href} passHref {...next}>
+      <Component {...mui} {...props}>
+        {children}
+      </Component>
+    </NextLink>
   ) : (
     <Component href={href} {...mui} {...props}>
       {children}
