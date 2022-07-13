@@ -1165,7 +1165,7 @@
   "resolved" "https://registry.npmjs.org/@colors/colors/-/colors-1.5.0.tgz"
   "version" "1.5.0"
 
-"@cypress/request@^2.88.10":
+"@cypress/request@^2.88.6":
   "integrity" "sha512-Zp7F+R93N0yZyG34GutyTNr+okam7s/Fzc1+i3kcqOP8vk6OuajuE9qZJ6Rs+10/1JFtXFYMdyarnU1rZuJesg=="
   "resolved" "https://registry.npmjs.org/@cypress/request/-/request-2.88.10.tgz"
   "version" "2.88.10"
@@ -3204,10 +3204,10 @@
     "@types/prop-types" "*"
     "csstype" "^3.0.2"
 
-"@types/sinonjs__fake-timers@8.1.1":
-  "integrity" "sha512-0kSuKjAS0TrGLJ0M/+8MaFkGsQhZpB6pxOmvS3K8FYI72K//YmdfoW9X2qPsAKh1mkwxGD5zib9s1FIFed6E8g=="
-  "resolved" "https://registry.npmjs.org/@types/sinonjs__fake-timers/-/sinonjs__fake-timers-8.1.1.tgz"
-  "version" "8.1.1"
+"@types/sinonjs__fake-timers@^6.0.2":
+  "integrity" "sha512-IFQTJARgMUBF+xVd2b+hIgXWrZEjND3vJtRCvIelcFB5SIXfjV4bOHbHJ0eXKh+0COrBRc8MqteKAz/j88rE0A=="
+  "resolved" "https://registry.npmjs.org/@types/sinonjs__fake-timers/-/sinonjs__fake-timers-6.0.4.tgz"
+  "version" "6.0.4"
 
 "@types/sizzle@^2.3.2":
   "integrity" "sha512-JYM8x9EGF163bEyhdJBpR2QX1R5naCJHC8ucJylJ3w9/CVBaskdQ8WqBf8MmQrd1kRvp/a4TS8HJ+bxzR7ZJYQ=="
@@ -4566,14 +4566,6 @@
     "base64-js" "^1.3.1"
     "ieee754" "^1.1.13"
 
-"buffer@^5.6.0":
-  "integrity" "sha512-EHcyIPBQ4BSGlvjB16k5KgAJ27CIsHY/2JBmCRReo48y9rQ3MaUzWX3KVlBa4U7MyX02HdVj0K7C3WaB3ju7FQ=="
-  "resolved" "https://registry.npmjs.org/buffer/-/buffer-5.7.1.tgz"
-  "version" "5.7.1"
-  dependencies:
-    "base64-js" "^1.3.1"
-    "ieee754" "^1.1.13"
-
 "buffer@^6.0.3":
   "integrity" "sha512-FTiCpNxtwiZZHEZbcbTIcZjERVICn9yq/pDFkTl95/AxzD1naBctN7YO68riM/gLSDY7sdrMby8hofADYuuqOA=="
   "resolved" "https://registry.npmjs.org/buffer/-/buffer-6.0.3.tgz"
@@ -4992,7 +4984,7 @@
   "resolved" "https://registry.npmjs.org/cli-spinners/-/cli-spinners-2.6.1.tgz"
   "version" "2.6.1"
 
-"cli-table3@^0.6.1", "cli-table3@~0.6.1":
+"cli-table3@^0.6.1", "cli-table3@~0.6.0":
   "integrity" "sha512-QyavHCaIC80cMivimWu4aWHilIpiDpfm3hGmqAmXVL1UsnbLuBSMd21hTX6VY4ZSDSM73ESLeF8TOYId3rBTbw=="
   "resolved" "https://registry.npmjs.org/cli-table3/-/cli-table3-0.6.2.tgz"
   "version" "0.6.2"
@@ -5514,25 +5506,24 @@
   "resolved" "https://registry.npmjs.org/cyclist/-/cyclist-1.0.1.tgz"
   "version" "1.0.1"
 
-"cypress@^10.3.0":
-  "integrity" "sha512-txkQWKzvBVnWdCuKs5Xc08gjpO89W2Dom2wpZgT9zWZT5jXxqPIxqP/NC1YArtkpmp3fN5HW8aDjYBizHLUFvg=="
-  "resolved" "https://registry.npmjs.org/cypress/-/cypress-10.3.0.tgz"
-  "version" "10.3.0"
+"cypress@^8.0.0":
+  "integrity" "sha512-b1bMC3VQydC6sXzBMFnSqcvwc9dTZMgcaOzT0vpSD+Gq1yFc+72JDWi55sfUK5eIeNLAtWOGy1NNb6UlhMvB+Q=="
+  "resolved" "https://registry.npmjs.org/cypress/-/cypress-8.7.0.tgz"
+  "version" "8.7.0"
   dependencies:
-    "@cypress/request" "^2.88.10"
+    "@cypress/request" "^2.88.6"
     "@cypress/xvfb" "^1.2.4"
     "@types/node" "^14.14.31"
-    "@types/sinonjs__fake-timers" "8.1.1"
+    "@types/sinonjs__fake-timers" "^6.0.2"
     "@types/sizzle" "^2.3.2"
     "arch" "^2.2.0"
     "blob-util" "^2.0.2"
     "bluebird" "^3.7.2"
-    "buffer" "^5.6.0"
     "cachedir" "^2.3.0"
     "chalk" "^4.1.0"
     "check-more-types" "^2.24.0"
     "cli-cursor" "^3.1.0"
-    "cli-table3" "~0.6.1"
+    "cli-table3" "~0.6.0"
     "commander" "^5.1.0"
     "common-tags" "^1.8.0"
     "dayjs" "^1.10.4"
@@ -5551,15 +5542,16 @@
     "listr2" "^3.8.3"
     "lodash" "^4.17.21"
     "log-symbols" "^4.0.0"
-    "minimist" "^1.2.6"
+    "minimist" "^1.2.5"
     "ospath" "^1.2.2"
     "pretty-bytes" "^5.6.0"
     "proxy-from-env" "1.0.0"
+    "ramda" "~0.27.1"
     "request-progress" "^3.0.0"
-    "semver" "^7.3.2"
     "supports-color" "^8.1.1"
     "tmp" "~0.2.1"
     "untildify" "^4.0.0"
+    "url" "^0.11.0"
     "yauzl" "^2.10.0"
 
 "damerau-levenshtein@^1.0.7":
@@ -11032,6 +11024,11 @@
   "integrity" "sha512-9QnLuG/kPVgWvMQ4aODhsBUFKOUmnbUnsSXACv+NCQZcHbeb+v8Lodp8OVxtRULN1/xOyYLLaL6npE6dMq5QTA=="
   "resolved" "https://registry.npmjs.org/ramda/-/ramda-0.28.0.tgz"
   "version" "0.28.0"
+
+"ramda@~0.27.1":
+  "integrity" "sha512-SbiLPU40JuJniHexQSAgad32hfwd+DRUdwF2PlVuI5RZD0/vahUco7R8vD86J/tcEKKF9vZrUVwgtmGCqlCKyA=="
+  "resolved" "https://registry.npmjs.org/ramda/-/ramda-0.27.2.tgz"
+  "version" "0.27.2"
 
 "randombytes@^2.0.0", "randombytes@^2.0.1", "randombytes@^2.0.5", "randombytes@^2.1.0":
   "integrity" "sha512-vYl3iOX+4CKUWuxGi9Ukhie6fsqXqS9FE2Zaic4tNFD2N2QQaXOMFbuKK4QmDHC0JO6B1Zp41J0LpT0oR68amQ=="
