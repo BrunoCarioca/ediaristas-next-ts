@@ -4,21 +4,21 @@ import Presentation from '@partials/index/_presentation';
 import type { GetStaticProps, NextPage } from 'next';
 
 export const getStaticProps: GetStaticProps = async () => {
-  return {
-    props: {
-      title: '',
-    },
-  };
+    return {
+        props: {
+            title: '',
+        },
+    };
 };
 
 const index: NextPage = () => {
-  return (
-    <div>
-      <Presentation />
-      <Advantages />
-      <FrequentQuestions />
-    </div>
-  );
+    return (
+        <div>
+            <Presentation />
+            <Advantages />
+            <FrequentQuestions />
+        </div>
+    );
 };
 
 export default index;
